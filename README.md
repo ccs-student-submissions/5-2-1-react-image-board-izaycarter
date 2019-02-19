@@ -24,6 +24,7 @@ After completing this assignment, you be able to effectively use...
 **Before you start!!**
 
 [Watch Pete Hunt](https://youtu.be/x7cQ3mrcKaY)
+
 [Read Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
 
 ### Deliverables
