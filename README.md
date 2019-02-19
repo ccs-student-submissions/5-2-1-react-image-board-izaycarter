@@ -80,6 +80,21 @@ Using the tools you've learned in class, create a responsive image board that al
 
 The design shows a "+" icon at the top, this should direct you to django admin.
 
+**MOBILE**
+
+<img src="https://github.com/ccs-student-submissions/7.2-react_image_board/blob/master/mobile.png" /> 
+
+
+**DESKTOP**
+
+<img src="https://github.com/ccs-student-submissions/7.2-react_image_board/blob/master/desktop.png" /> 
+
+
+**ADD IMAGE FORM**
+
+<img src="https://github.com/ccs-student-submissions/7.2-react_image_board/blob/master/add.png" /> 
+
+
 ## Hey Mikey, I Think He Likes It Mode
 
 - The form to add an image should properly validate the image URL by at minimum
