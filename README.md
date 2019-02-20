@@ -1,6 +1,6 @@
 # 7.2 REACT IMAGE BOARD
 
-Create an image board that saves submissions to a server using jQuery + React
+Create an image board that saves submissions to state using React
 
 ## Objectives
 
@@ -8,16 +8,17 @@ Create an image board that saves submissions to a server using jQuery + React
 
 After completing this assignment, you should...
 
-* Be able to create a project that uses AJAX to GET and POST data to a Django server
-* Be able to use React components as Views in an Django app
+* Be able to create a project that create-react-app
+* Be able to use React components as a View layer
 
 ### Performance Objectives
 
 After completing this assignment, you be able to effectively use...
 
 * A basic React Component
-* A Component's lifecycle method componentDidMount to make a GET AJAX request
-* Hook up an event in a React Component to make a POST AJAX request
+* React state
+* Pass state using props
+* Hook up an event in a React Component to capture user input and update state
 
 ## Details
 
@@ -29,12 +30,8 @@ After completing this assignment, you be able to effectively use...
 
 ### Deliverables
 
-* A repo containing at least:
-  * index.html
-  * scripts/index.js
-  * scripts/models/image.js
-  * scripts/components/main.jsx
-* Three react components in your main.jsx:
+* A repo containing create-react-app project:
+* Three react components in your App.js:
 
 ```
 var ImageForm = React.createClass({
@@ -70,13 +67,9 @@ var ImageBoard = React.createClass({
 });
 ```
 
-### Requirements
-
-* pep8 and pep20 compliant code
-
 ## I'M A WEB DEVELOPER MODE
 
-Using the tools you've learned in class, create a responsive image board that allows you to add images and captions via a url. The images that are added to the image board should be saved using django admin. Below are screenshots of what your app could look like. But feel free to use some creative freedom.
+Using the tools you've learned in class, create a responsive image board that allows you to add images and captions via a url. The images that are added to the image board should be saved using React state. Below are screenshots of what your app could look like. But feel free to use some creative freedom.
 
 The design shows a "+" icon at the top, this should direct you to django admin.
 
