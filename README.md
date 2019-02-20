@@ -34,37 +34,36 @@ After completing this assignment, you be able to effectively use...
 * Three react components in your App.js:
 
 ```
-var ImageForm = React.createClass({
-  render: function(){
-    return (
+class ImageForm extends Component(
+  render() {
+    return(
       <form>
         ...
       </form>
-    );
+    )
   }
-});
+);
 
-
-var ImageList = React.createClass({
-  render: function(){
-    return (
+class ImageList extends Component(
+  render() {
+    return(
       <ul>
         ...
       </ul>
-    );
+    )
   }
-});
+);
 
-var ImageBoard = React.createClass({
-  render: function(){
-    return (
+class ImageBoard extends Component(
+  render() {
+    return(
       <div>
         <ImageForm />
         <ImageList />
       </div>
-    );
+    )
   }
-});
+)
 ```
 
 ## I'M A WEB DEVELOPER MODE
