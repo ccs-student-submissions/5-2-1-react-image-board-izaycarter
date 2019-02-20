@@ -1,4 +1,4 @@
-# 7.2 REACT IMAGE BOARD
+# 7.3 REACT IMAGE BOARD
 
 Create an image board that saves submissions to state using React
 
