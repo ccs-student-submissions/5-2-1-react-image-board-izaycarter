@@ -70,7 +70,6 @@ class ImageBoard extends Component(
 
 Using the tools you've learned in class, create a responsive image board that allows you to add images and captions via a url. The images that are added to the image board should be saved using React state. Below are screenshots of what your app could look like. But feel free to use some creative freedom.
 
-The design shows a "+" icon at the top, this should direct you to django admin.
 
 **MOBILE**
 
@@ -90,5 +89,5 @@ The design shows a "+" icon at the top, this should direct you to django admin.
 ## Hey Mikey, I Think He Likes It Mode
 
 - The form to add an image should properly validate the image URL by at minimum
-  checking for a http:// or https:// prefix and require a non-empty description.
+- checking for a http:// or https:// prefix and require a non-empty description.
 - Create a login page and add the username to the images
