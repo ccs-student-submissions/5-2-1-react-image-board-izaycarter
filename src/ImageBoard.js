@@ -1,5 +1,9 @@
 import React, {Component} from "react";
 import {FaPlusCircle} from "react-icons/fa";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
     class AddImage extends Component {
@@ -10,7 +14,7 @@ import {FaPlusCircle} from "react-icons/fa";
                 caption:""
             };
 
-            this.addImg = this.addImage.bind(this);
+            this.addImage = this.addImage.bind(this);
             this.handleChange = this.handleChange.bind(this);
         }
 
@@ -23,7 +27,7 @@ import {FaPlusCircle} from "react-icons/fa";
             event.preventDefault();
 
             let image = {
-                url: this.state.url,
+                url: this.state.url ,
                 caption: this.state.caption
             };
 
@@ -84,7 +88,7 @@ import {FaPlusCircle} from "react-icons/fa";
                     <div>
                     {isEditing ? (
                       <div>
-                        <div>
+                        <div className="img">
                           <img src={this.props.image.url}/>
                         </div>
                         <div>
@@ -93,7 +97,7 @@ import {FaPlusCircle} from "react-icons/fa";
                         </div>
                       </div>) : (
                       <div>
-                        <div>
+                        <div className="img">
                           <img src={this.props.image.url}/>
                         </div>
                         <div>
@@ -103,7 +107,7 @@ import {FaPlusCircle} from "react-icons/fa";
                         </div>
                       </div>
                     )}
-                    </div>
+                  </div>
                 );
             }
         }
@@ -127,7 +131,7 @@ import {FaPlusCircle} from "react-icons/fa";
         }
 
         componentDidMount() {
-          let defaultImages = [{url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNqOUT55qkYhpeIZPaabgyjlEpyUKfNQuVgFzyPV2xj5i79gOS", caption: "the moon"},];
+          let defaultImages = [{url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNqOUT55qkYhpeIZPaabgyjlEpyUKfNQuVgFzyPV2xj5i79gOS", caption: "the moon"},{url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSUGpDE-ujbfXaIiM4oavlihBYe04Uf-k45DTdbaPyRx_l5q6j" , caption:"Amazing View"},{url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYohDrgw03vn64rjifIUeGH0fgu8cRtNB4Sr0BOVpTkQ_3ZDou", caption:"Mountian Tops"}];
           this.setState({images: defaultImages});
         }
 
@@ -150,16 +154,24 @@ import {FaPlusCircle} from "react-icons/fa";
 
         render(){
           let images = this.state.images.map((image,index) => {
-            return <ImageItem key={index} image={image} updateCaption={this.updateCaption}  removeImage = {() => this.removeImage(image)}/>
+            return <ImageItem key={index} image={image} updateCaption={this.updateCaption} removeImage = {() => this.removeImage(index)}/>
           });
 
             return (
-                <div>
-                    <div>
-                    <AddImage addImage={this.addImg}/>
-                    </div>
-                    {images}
-                </div>
+                <Container>
+                    <Row>
+                      <AddImage addImage={this.addImage}/>
+                    </Row>
+                    <Col>
+                      {images}
+                    </Col>
+                    <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossOrigin="anonymous"
+/>
+                </Container>
 
 
             );
